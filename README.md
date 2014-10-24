@@ -1,27 +1,29 @@
-Upload Images to Microsoft Azure
+WebSocket Solution in JavaScript
 =========
 
-The sample shows how to upload the document images, scanned by [Dynamic Web TWAIN][1], to Microsoft Azure Web service.
+The sample shows how to use Node.js to quickly implement image transmission between servers and clients in a few lines of code.
 
 Screenshots
 -----------
-![image](http://www.codepool.biz/wp-content/uploads/2014/10/azure_upload_start.png)
-![image](http://www.codepool.biz/wp-content/uploads/2014/10/uploaded_image.png)
+![image](http://www.codepool.biz/wp-content/uploads/2014/10/nodejs_websocket.png)
 
 Resources
 -----------
 
-* [Dynamic Web TWAIN SDK][2]
-* [Microsoft Azure][3]
+* [Node.js][1]
+* [Edge.js][2]
 
 How to Run:
 -----------
-1. open `QueryAzureSAS.php`, and specify `$accountName = ""; $accountKey = ""; $baseUrl = "";`
-2. deploy the project to your Web server
-3. visit `online_demo_scan.php` in your Web browser
+1. `npm install edge`
+2. `npm install ws`
+3. `node server.js`
+4. Open `client.htm`
 
+References:
+-----------
+1. [Run .NET and Node.js code in-process with Edge.js][3]
 
-
-[1]:http://www.dynamsoft.com/Products/WebTWAIN_Overview.aspx
-[2]:https://www.dynamsoft.com/Secure/Register_ClientInfo.aspx?productName=WebTWAIN&from=FromDownload
-[3]:https://manage.windowsazure.com/
+[1]:http://nodejs.org/
+[2]:https://github.com/tjanczuk/edge
+[3]:http://www.infoq.com/articles/the_edge_of_net_and_node
